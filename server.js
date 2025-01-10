@@ -26,15 +26,8 @@ app.post("/chat",async (req,res)=>{
                 output_type: 'chat',
                 input_type: 'chat',
                 tweaks: {
-                    "ParseData-bU2Lk": {},
-                    "SplitText-s45X9": {},
-                    "OpenAIModel-Bunci": {},
-                    "ChatOutput-8sI0F": {},
-                    "AstraDB-66x6b": {},
-                    "File-j3YRd": {},
-                    "ChatInput-iAwEu": {},
-                    "CombineText-1kBZ6": {},
-                    "TextInput-upHmt": {}
+                    "SplitText-s45X9": {delimiter: "\n"},
+                    "OpenAIModel-Bunci": {temperature: 0.1}
                 }
             },
             {
